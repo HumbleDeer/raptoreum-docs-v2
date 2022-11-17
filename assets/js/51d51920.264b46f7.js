@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkraptoreum_docs=self.webpackChunkraptoreum_docs||[]).push([[9668],{2376:o=>{o.exports=JSON.parse('{"permalink":"/raptoreum-docs/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
