@@ -1,22 +1,23 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Raptoreum Docs',
   tagline: '',
-  url: 'https://docs.raptoreum.com',
-  baseUrl: '/',
+  favicon: 'img/rtm-branding/cropped-Raptoreum-favicon-192x192.png',
+  url: 'https://humbledeer.github.io',
+  baseUrl: '/raptoreum-docs',
+  trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+
 
   // GitHub pages deployment config. If you aren't using GitHub pages, you don't need these.
-  projectName: 'docs', // Usually your repo name.
-  organizationName: 'Raptor3um', // Usually your GitHub org/user name.
+  projectName: 'raptoreum-docs', // Usually your repo name.
+  organizationName: 'humbledeer', // Usually your GitHub org/user name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -46,7 +47,10 @@ const config = {
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/color-theme-rtm.css')
+          ]            
         },
       }),
     ],
@@ -64,7 +68,7 @@ const config = {
         title: 'RTM Docs',
         logo: {
           alt: 'Raptoreum Logo',
-          src: 'img/logo_rtm_mono.svg',
+          src: 'img/rtm-branding/logo_rtm_mono.svg',
         },
         items: [
           {
@@ -89,6 +93,13 @@ const config = {
       },
 
       footer: {
+        logo: {
+          alt: 'Raptoreum text logo',
+          src: 'img/rtm-branding/rtm-letters.svg',
+          href: 'https://raptoreum.com',
+          width: 320,
+          height: 'auto',
+        },
         links: [
           {
             title: 'Raptoreum',
@@ -99,7 +110,7 @@ const config = {
               },
               {
                 label: 'Features',
-                to: '/raptoreum/index#raptoreum-features',
+                to: '/raptoreum/features',
               },
               {
                 label: 'Exchanges',
@@ -108,11 +119,7 @@ const config = {
               {
                 label: 'Explorer',
                 href: 'https://explorer.raptoreum.com/',
-              },
-              {
-                label: 'Tools',
-                to: '/raptoreum/tools',
-              },
+              }
             ],
           },
           {
@@ -125,6 +132,10 @@ const config = {
               {
                 label: 'Credits',
                 to: '/raptoreum/credits',
+              },
+              {
+                label: 'Tools',
+                to: '/raptoreum/tools',
               },
             ],
           },
@@ -180,7 +191,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Raptoreum. All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Feathered Corp Inc. All Rights Reserved.`,
       },
 
       // Code highlighter plugin settings (built-in)
