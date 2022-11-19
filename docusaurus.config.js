@@ -9,7 +9,7 @@ const config = {
   tagline: '',
   favicon: 'img/rtm-branding/cropped-Raptoreum-favicon-192x192.png',
   url: 'https://humbledeer.github.io',
-  baseUrl: '/raptoreum-docs',
+  baseUrl: '/raptoreum-docs-v2',
   trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
