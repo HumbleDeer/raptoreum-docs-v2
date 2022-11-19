@@ -9,7 +9,7 @@ const config = {
   title: 'Raptoreum Docs',
   tagline: '',
   url: 'https://docs.raptoreum.com',
-  baseUrl: '/',
+  baseUrl: '/raptoreum-docs-v2',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
