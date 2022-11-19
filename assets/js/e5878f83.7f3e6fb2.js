@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkraptoreum_docs=self.webpackChunkraptoreum_docs||[]).push([[8104],{1650:s=>{s.exports=JSON.parse('{"label":"usecase","permalink":"/raptoreum-docs-v2/blog/tags/usecase","allTagsPath":"/raptoreum-docs-v2/blog/tags","count":1}')}}]);

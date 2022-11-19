@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkraptoreum_docs=self.webpackChunkraptoreum_docs||[]).push([[8701],{7977:e=>{e.exports=JSON.parse('{"label":"release","permalink":"/raptoreum-docs/blog/tags/release","allTagsPath":"/raptoreum-docs/blog/tags","count":1}')}}]);
