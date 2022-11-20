@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.sidebarRoot.category.raptoreum": {
+    "message": "raptoreum",
+    "description": "The label for category raptoreum in sidebar sidebarRoot"
+  },
+  "sidebar.sidebarRoot.category.smartnodes": {
+    "message": "smartnodes",
+    "description": "The label for category smartnodes in sidebar sidebarRoot"
+  },
+  "sidebar.sidebarRoot.category.Raptoreum Wallet": {
+    "message": "Raptoreum Wallet",
+    "description": "The label for category Raptoreum Wallet in sidebar sidebarRoot"
+  },
+  "sidebar.sidebarRoot.category.cli-wallet": {
+    "message": "cli-wallet",
+    "description": "The label for category cli-wallet in sidebar sidebarRoot"
+  },
+  "sidebar.sidebarRoot.category.commands": {
+    "message": "commands",
+    "description": "The label for category commands in sidebar sidebarRoot"
+  },
+  "sidebar.sidebarRoot.category.gui-wallet": {
+    "message": "gui-wallet",
+    "description": "The label for category gui-wallet in sidebar sidebarRoot"
+  },
+  "sidebar.tutorialSidebar.category.Category A": {
+    "message": "Category A",
+    "description": "The label for category Category A in sidebar tutorialSidebar"
+  },
+  "sidebar.apiSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category API in sidebar apiSidebar"
+  }
+}
