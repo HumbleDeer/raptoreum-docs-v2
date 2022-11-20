@@ -1,17 +1,35 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+raptoreum:
+  name: Raptoreum
+  title: Project Manager
+  url: https://www.raptoreum.com
+  image_url: /raptoreum-docs/img/blog/author-raptoreum.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+binarai:
+  name: Binarai
+  title: CMO
+  url: https://www.raptoreum.com
+  image_url: /raptoreum-docs/img/blog/author-binarai.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+piggy:
+  name: Bigpiggy01
+  title: Core team
+  url: https://www.raptoreum.com
+  image_url: /raptoreum-docs/img/blog/author-piggy.png
+
+charlie:
+  name: Charlie
+  title: Core team
+  url: https://www.raptoreum.com
+  image_url: /raptoreum-docs/img/blog/author-charlie.png
+
+tri:
+  name: Tri
+  title: Developer
+  url: https://www.raptoreum.com
+  image_url: /raptoreum-docs/img/blog/author-tri.png
+
+valky:
+  name: HumbleValky
+  title: Writer
+  url: https://www.zioniyes.me
+  image_url: /raptoreum-docs/img/blog/author-valky.png
