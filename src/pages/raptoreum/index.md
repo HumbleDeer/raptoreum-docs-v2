@@ -1,3 +1,13 @@
+# Raptoreum
+
+Raptoreum is a hybrid PoW/PoSe blockchain that has a primary goal of solving real world issues, helping drive adoption of blockchain solutions and a positive global evolution.
+
+The open-source project is also aiming to provide an asset platform allowing tokenization while also allowing DAPPs to work alongside smart contracts which are stored and executed at node level in languages such as Java & Python.
+
+Raptoreum was founded back in 2018 and had been in Testnet/Development for nearly 3 years before Genesis block on February 26th 2021.
+
+The RTM coin uses a custom hashing algorithm called Ghostrider. Ghostrider randomly switches algorithms with the aim of discouraging mass ASIC & FPGA mining which the project says is to increase overall decentralization.
+
 # Why Raptoreum?
 
 We are attempting to solve real world issues in ways that also help drive mass adoption.
