@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkraptoreum_docs=self.webpackChunkraptoreum_docs||[]).push([[2267],{4160:e=>{e.exports=JSON.parse('{"permalink":"/raptoreum-docs-v2/blog/tags/company","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Raptoreum News, but on the docs.","blogTitle":"Raptoreum News"}')}}]);
