@@ -32,7 +32,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
+        docs: { // Docs module config
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -43,7 +43,8 @@ const config = {
           /** display the author who last updated the doc. */
           showLastUpdateAuthor: true,
         },
-        blog: {
+
+        blog: { // Blog module config
           /** Blog page meta title & description for better SEO. */
           blogTitle: "Raptoreum News",
           blogDescription: "Raptoreum News, but on the docs.",
@@ -52,11 +53,11 @@ const config = {
 
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  '',
+          // editUrl: '',
         },
+
         theme: {
-          customCss: [ require.resolve('./src/css/custom.css') ]
+          customCss: require.resolve('./src/css/custom.css')
         },
       }),
     ],
@@ -67,14 +68,15 @@ const config = {
     ({
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
+        disableSwitch: false, // Allow switching to Light Mode by the user
       },
 
       navbar: {
         title: 'RTM Docs',
         logo: {
           alt: 'Raptoreum Logo',
-          src: 'img/rtm-branding/logo_rtm_mono.svg',
+          src: 'img/rtm-branding/logo_rtm_black.svg',
+          srcDark: 'img/rtm-branding/logo_rtm_mono.svg'
         },
         // items: [
         //   {
@@ -107,7 +109,7 @@ const config = {
           height: 'auto',
         },
         links: [
-          {
+          { // Raptoreum
             title: 'Raptoreum',
             items: [
               {
@@ -128,7 +130,7 @@ const config = {
               },
             ],
           },
-          {
+          { // More
             title: 'More',
             items: [
               {
@@ -149,20 +151,24 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Quick Docs',
+          { // Social Media
+            title: 'Social Media',
             items: [
               {
-                label: 'Raptoreum Wallet',
-                to: '/docs/wallet/install',
+                label: 'Twitter',
+                href: 'https://twitter.com/raptoreum',
               },
               {
-                label: 'Smartnode install',
-                to: '/docs/smartnode/install',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/raptoreum/',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/channel/UCfFNoa8d5b0Jt8dfwy0eG7g',
               },
             ],
           },
-          {
+          { // Community
             title: 'Community',
             items: [
               {
@@ -174,20 +180,12 @@ const config = {
                 href: 'https://t.me/raptoreum',
               },
               {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/channel/UCfFNoa8d5b0Jt8dfwy0eG7g',
-              },
-              {
                 label: 'Discord',
                 href: 'https://discordapp.com/raptoreum',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/raptoreum',
-              },
+              }
             ],
           },
-          {
+          { // Code
             title: 'Code',
             items: [
               {
@@ -205,9 +203,7 @@ const config = {
       },
 
       // Code highlighter plugin settings (built-in)
-      prism: {
-        theme: darkCodeTheme
-      },
+      prism: { theme: darkCodeTheme },
 
       // Zoom plugin settings
       zoom: {
@@ -218,10 +214,13 @@ const config = {
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
         config: {}
       },
-    }),
-  plugins: [
-    require.resolve('docusaurus-plugin-image-zoom'),
-  ],
+
+    }), // End themeConfig
+
+  plugins:
+    [
+      require.resolve('docusaurus-plugin-image-zoom'),
+    ],
 };
 
 module.exports = config; 
