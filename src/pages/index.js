@@ -3,18 +3,24 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
+import { useColorMode } from '@docusaurus/theme-common';
+
+
+
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
+  const { colorMode } = useColorMode();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <img src={require('@site/static/img/rtm-branding/rapt-outline.png').default} width="50%" />
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <img className={colorMode === "light" ? styles.invert : null} src={require('@site/static/img/rtm-branding/rapt-outline.png').default} width="50%" />
+        {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
+        {/*
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -22,20 +28,21 @@ function HomepageHeader() {
             Getting started - 5min ⏱️
           </Link>
         </div>
+        */}
       </div>
     </header>
   );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        
+
         <HomepageFeatures />
       </main>
     </Layout>
