@@ -30,11 +30,11 @@ const FeatureList = [
 function Feature({ title, image, url }) {
   return (
     <Link className={clsx('col col--3')} to={url}>
-      <div class="card padding--md padding-horiz--sm shadow--xtl">
-        <div class="card__header text--center">
+      <div className="card padding--md padding-horiz--sm shadow--xtl">
+        <div className="card__header text--center">
           <img src={image} className={styles.featureImg} role="img" />
         </div>
-        <div class="card__body text--center">
+        <div className="card__body text--center">
           <div className={styles.buttons}>
             <Link
               className="button button--block button--secondary button--md"
@@ -52,7 +52,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <h1 class="text--center margin-bottom--lg">Topics</h1>
+        <h1 className="text--center margin-bottom--lg">Topics</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
