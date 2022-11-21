@@ -30,7 +30,7 @@
   box-shadow: 0 8px 20px rgb(0 0 0 / 20%);
 }
 
-[data-theme='dark'] {
+[data-theme='dark'] .hero {
   --ifm-hero-background-color: hsl(20deg 55% 44%);
   --ifm-hero-text-color: var(--ifm-font-color-base);
 }
