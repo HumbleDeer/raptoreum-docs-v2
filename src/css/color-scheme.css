@@ -1,0 +1,16 @@
+:root {
+    --raptoreum-yellow: #f2a900;
+    --raptoreum-redish: #91341e;
+
+    --ifm-color-primary-darkest: hsl(12, 70%, 46%);
+    --ifm-color-primary-darker: hsl(12, 75%, 49%);
+    --ifm-color-primary-dark: hsl(12, 80%, 52%);
+    --ifm-color-primary: var(--raptoreum-yellow);
+    --ifm-color-primary-light: hsl(12, 80%, 63%);
+    --ifm-color-primary-lighter: hsl(12, 85%, 67%);
+    --ifm-color-primary-lightest: hsl(12, 85%, 72%);
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+    --ifm-hero-background-color: var(--raptoreum-redish);
+    --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+}
