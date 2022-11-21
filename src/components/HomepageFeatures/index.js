@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Wallet',
-    image: require('@site/static/img/rtm-coin.png').default,
+    image: require('@site/static/img/rtm-branding/rtm-coin.png').default,
     url: '/docs/wallet/',
   },
   {
@@ -34,11 +34,13 @@ function Feature({ title, image, url }) {
         <div class="card__header text--center">
           <img src={image} className={styles.featureImg} role="img" />
         </div>
-        <div class="card__body">
-          <div class="text--center">
-          
-              <h1>{title}</h1>
-          
+        <div class="card__body text--center">
+          <div className={styles.buttons}>
+            <Link
+              className="button button--block button--secondary button--md"
+              to={url}>
+              {title}
+            </Link>
           </div>
         </div>
       </div>
@@ -50,6 +52,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h1 class="text--center margin-bottom--lg">Topics</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

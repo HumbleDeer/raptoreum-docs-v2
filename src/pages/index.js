@@ -13,7 +13,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <img src={require('@site/static/img/rapt-outline.png').default} width="50%" />
+        <img src={require('@site/static/img/rtm-branding/rapt-outline.png').default} width="50%" />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
@@ -35,6 +35,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        
         <HomepageFeatures />
       </main>
     </Layout>

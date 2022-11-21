@@ -57,6 +57,6 @@ Avoid setting both *lock times* as negative to prevent indefinitely locking your
 Thank you \- The Raptoreum Team
 
 [dl-wallet]: https://github.com/Raptor3um/raptoreum/releases/tag/1.13.17.0
-[docs-futures]: /docs/raptoreum/futures.md
+[docs-futures]: docs/raptoreum/futures
 [gh-dash-update]: https://github.com/dashpay/dash/blob/v0.17.0.2/doc/release-notes.md
 [bootstraps]: https://bootstrap.raptoreum.com

@@ -8,15 +8,15 @@ const config = {
   title: 'Raptoreum Docs',
   tagline: '',
   favicon: 'img/rtm-branding/cropped-Raptoreum-favicon-192x192.png',
-  url: 'https://humbledeer.github.io',
+  url: 'https://humbledeer.github.io/',
   baseUrl: '/raptoreum-docs-v2',
-  trailingSlash: false,
+  trailingSlash: true,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
 
   // GitHub pages deployment config. If you aren't using GitHub pages, you don't need these.
-  projectName: 'raptoreum-docs', // Usually your repo name.
+  projectName: 'raptoreum-docs-v2', // Usually your repo name.
   organizationName: 'humbledeer', // Usually your GitHub org/user name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -38,19 +38,25 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/raptor3um/docs',
+          /** display the last date the doc was updated. */
+          showLastUpdateTime: true,
+          /** display the author who last updated the doc. */
+          showLastUpdateAuthor: true,
         },
-        // blog: {
-        //   showReadingTime: false,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        blog: {
+          /** Blog page meta title & description for better SEO. */
+          blogTitle: "Raptoreum News",
+          blogDescription: "Raptoreum News, but on the docs.",
+
+          showReadingTime: false,
+
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          //editUrl:
+          //  '',
+        },
         theme: {
-          customCss: [
-            require.resolve('./src/css/custom.css'),
-            require.resolve('./src/css/color-theme-rtm.css')
-          ]            
+          customCss: [ require.resolve('./src/css/custom.css') ]
         },
       }),
     ],
@@ -61,7 +67,7 @@ const config = {
     ({
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: true,
+        disableSwitch: false,
       },
 
       navbar: {
@@ -70,26 +76,26 @@ const config = {
           alt: 'Raptoreum Logo',
           src: 'img/rtm-branding/logo_rtm_mono.svg',
         },
-        items: [
-          {
-            label: 'FAQ',
-            type: 'doc',
-            docId: 'faq',
-            position: 'left',
-          },
-          {
-            label: 'Tutorial',
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
+        // items: [
+        //   {
+        //     label: 'FAQ',
+        //     type: 'doc',
+        //     docId: 'faq',
+        //     position: 'left',
+        //   },
+        //   {
+        //     label: 'Tutorial',
+        //     type: 'doc',
+        //     docId: 'intro',
+        //     position: 'left',
 
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'right'
-          },
-        ],
+        //   },
+        //   {
+        //     to: '/blog',
+        //     label: 'Blog',
+        //     position: 'right'
+        //   },
+        // ],
       },
 
       footer: {
@@ -113,13 +119,13 @@ const config = {
                 to: '/raptoreum/features',
               },
               {
-                label: 'Exchanges',
-                to: '/raptoreum/exchanges',
+                label: 'Team',
+                to: '/raptoreum/team',
               },
               {
-                label: 'Explorer',
-                href: 'https://explorer.raptoreum.com/',
-              }
+                label: 'Credits',
+                to: '/raptoreum/credits',
+              },
             ],
           },
           {
@@ -130,8 +136,12 @@ const config = {
                 to: '/raptoreum/roadmap',
               },
               {
-                label: 'Credits',
-                to: '/raptoreum/credits',
+                label: 'Exchanges',
+                to: '/raptoreum/exchanges',
+              },
+              {
+                label: 'Explorer',
+                href: 'https://explorer.raptoreum.com/',
               },
               {
                 label: 'Tools',
@@ -178,7 +188,7 @@ const config = {
             ],
           },
           {
-            title: 'GitHub repos',
+            title: 'Code',
             items: [
               {
                 label: 'RaptoreumCore',

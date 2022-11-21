@@ -9,13 +9,3 @@
   height: 200px;
   width: 200px;
 }
-
-.featureButtons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.anchor{
-  color:white;
-}
